@@ -1,4 +1,4 @@
-# LLM Reranking Bias Evaluation (Anonymized)
+# LLM Reranking Bias Evaluation
 
 This repository contains the main Jupyter Notebook and its HTML export for evaluating bias in Large Language Model (LLM)–based resume reranking.  
 The experiments benchmark **open-source LLMs**, **embedding models**, and **classical search methods** across:  
