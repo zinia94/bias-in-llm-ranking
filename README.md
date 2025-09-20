@@ -1,4 +1,6 @@
-# LLM Reranking Bias
+# Ranking Fairness in AI Hiring
+### A Benchmark of LLMs, Embeddings, and Classical Methods
+---
 
 This repository contains experiments investigating **bias in candidate reranking using Large Language Models (LLMs)**. The study evaluates how LLMs, embeddings, and classical methods behave when ranking resumes against a fixed job description, with a focus on **fairness, consistency, and bias mitigation**.
 
