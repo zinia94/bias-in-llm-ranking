@@ -26,10 +26,6 @@ The experiments specifically examine:
 * **llm\_reranking\_bias\_with\_ndcg\_score.ipynb**
   Extended version of the notebook with additional **NDCG\@20 (Normalized Discounted Cumulative Gain)** evaluation.
 
-  * Provides a **quantitative metric** for ranking quality.
-  * Captures subtle differences between models under bias experiments.
-  * Complements qualitative analysis with reproducible numbers.
-
 * **llm\_reranking\_bias\_with\_ndcg\_score.html**
   Exported HTML version of the extended notebook.
 
