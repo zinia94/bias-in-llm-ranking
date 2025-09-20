@@ -47,5 +47,3 @@ The experiments specifically examine:
 * Open-source models and classical baselines are fully reproducible with the provided code.
 * Neutral naming and token replacement experiments are included to demonstrate bias mitigation.
 * This repository complements the associated research paper, where results, heatmaps, and discussion are presented.
-
-Would you like me to also add a **"Structure of Experiments" section** (like listing the bias types and CV templates setup) so the README itself serves as a mini-summary of your paper?
