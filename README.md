@@ -4,38 +4,44 @@
 
 This repository contains experiments investigating **bias in candidate reranking using Large Language Models (LLMs)**. The study evaluates how LLMs, embeddings, and classical methods behave when ranking resumes against a fixed job description, with a focus on **fairness, consistency, and bias mitigation**.
 
-The experiments specifically examine:
+## Overview
 
-* **Name bias** – whether candidate names affect rankings despite identical content.
-* **Order bias** – whether the sequence of resumes influences results.
-* **Consistency checks** – whether repeated runs with the same input yield stable outputs.
-* **Bias mitigation** – whether anonymization (neutral labels, token replacement) reduces bias.
+This project benchmarks multiple model categories on **resume ranking fairness** in AI-driven hiring:  
+- **Proprietary LLMs** (GPT-4, Claude, Gemini, etc.)  
+- **Open-Source LLMs** (Mistral, LLaMA, Phi-3)  
+- **Embedding Models** (MiniLM, MPNet, GTE, E5)  
+- **Classical Baselines** (BM25, TF-IDF)  
 
-## Repository Contents
+Experiments test for:  
+- **Name Bias**  
+- **Order Bias**  
+- **Consistency**  
+- **Anomalies**  
+- **Bias Mitigation Strategies**
 
-* **notebooks/llm\_reranking\_bias.ipynb**
-  Initial Jupyter Notebook implementation of the bias evaluation framework. Includes:
+## Repository Structure
 
-  * Resume templates (strong vs. weak profiles).
-  * Candidate name variations.
-  * Baseline experiments across LLMs, embeddings, and classical models.
+- **`notebooks/`**  
+  Contains Jupyter notebooks used for running experiments.  
+  - `llm_reranking_bias.ipynb`: Initial notebook (without NDCG evaluation).  
+  - `llm_reranking_bias_with_ndcg_score.ipynb`: Updated notebook including NDCG@20 scoring.  
 
-* **notebooks/llm\_reranking\_bias\_with\_ndcg\_score.ipynb**
-  Extended version of the notebook with additional **NDCG\@20 (Normalized Discounted Cumulative Gain)** evaluation.
+- **`html_notebooks/`**  
+  HTML exports of the notebooks for easy viewing.  
+  - `llm_reranking_bias.html`  
+  - `llm_reranking_bias_with_ndcg_score.html`  
 
-* **html_notebooks/llm\_reranking\_bias.html**
-  Exported HTML version of the initial notebook (viewable in any browser without Jupyter).
-
-* **html_notebooks/llm\_reranking\_bias\_with\_ndcg\_score.html**
-  Exported HTML version of the extended notebook.
-
+- **`results/`**  
+  Contains evaluation outputs for all experiments, stored in PDF format.  
+  - `classical_methods_results/`: Results for BM25 and TF-IDF.  
+  - `embedding_models_results/`: Results for MiniLM, MPNet, GTE, E5, etc.  
+  - `opensource_llm_results/`: Results for open-source LLMs (Mistral, LLaMA, Phi, etc.).  
 
 ## How to Use
 
 1. Open the `.ipynb` notebooks in **Jupyter Notebook** or **VS Code** to rerun experiments.
 2. Use the `.html` exports for quick browsing without needing a Python environment.
 3. Refer to the **with\_ndcg\_score** notebooks for the most complete results, including ranking metrics.
-
 
 ## Notes
 
