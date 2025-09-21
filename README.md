@@ -13,20 +13,20 @@ The experiments specifically examine:
 
 ## Repository Contents
 
-* **llm\_reranking\_bias.ipynb**
+* **notebooks/llm\_reranking\_bias.ipynb**
   Initial Jupyter Notebook implementation of the bias evaluation framework. Includes:
 
   * Resume templates (strong vs. weak profiles).
   * Candidate name variations.
   * Baseline experiments across LLMs, embeddings, and classical models.
 
-* **llm\_reranking\_bias.html**
-  Exported HTML version of the initial notebook (viewable in any browser without Jupyter).
-
-* **llm\_reranking\_bias\_with\_ndcg\_score.ipynb**
+* **notebooks/llm\_reranking\_bias\_with\_ndcg\_score.ipynb**
   Extended version of the notebook with additional **NDCG\@20 (Normalized Discounted Cumulative Gain)** evaluation.
 
-* **llm\_reranking\_bias\_with\_ndcg\_score.html**
+* **html_notebooks/llm\_reranking\_bias.html**
+  Exported HTML version of the initial notebook (viewable in any browser without Jupyter).
+
+* **html_notebooks/llm\_reranking\_bias\_with\_ndcg\_score.html**
   Exported HTML version of the extended notebook.
 
 
